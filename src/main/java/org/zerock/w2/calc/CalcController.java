@@ -15,5 +15,7 @@ public class CalcController extends HttpServlet {
         String num2 = req.getParameter("num2");
         System.out.printf(" num1: %s", num1);
         System.out.printf(" num2: %s", num2);
+        //처리가 끝난후 다른 경로로 이동하게 하는 sendRedirect
+        resp.sendRedirect("/index");
     }
 }
